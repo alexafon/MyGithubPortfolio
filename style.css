@@ -3,6 +3,7 @@ body
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 300%;
+    margin: 0px;
 }
 
 .pageheader 
@@ -10,18 +11,37 @@ body
 	width: 100%;
 	font-family: Arial;
 }
-.navbar 
+
+.navbar ul
 {
-    position: fixed;
-    padding: 0;
-    top: 0;
-    left:0px;
-    margin: 0;
-    height: 51px;
-    width: 100%;
+    list-style-type: none;
+    background-color: gainsboro;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar li
+{
+    float: left;
+}
+
+.navbar a
+{
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
     background-color: gainsboro;
     
 }
+
+.navbar a:hover 
+{
+    background-color: grey;
+}
+
 .introduction 
 {
     position: relative;
